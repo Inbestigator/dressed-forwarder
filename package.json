@@ -1,6 +1,6 @@
 {
   "name": "dressed-forwarder",
-  "version": "0.1.0-rc.2",
+  "version": "0.1.0",
   "description": "Simple event proxy to forward events from a gateway connection to webhook server.",
   "scripts": {
     "dist": "rm -rf dist && bun copy && bun tsc",
