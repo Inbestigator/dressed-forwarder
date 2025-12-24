@@ -10,3 +10,5 @@ In order to enable parsing of gateway events, run builds through this library in
 ```
 
 Your events should go on a different route than your main interactions, as it does differ for handling.
+
+This is a janky solution and thus isn't worth being published under the `@dressed` scope.
