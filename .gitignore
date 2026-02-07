@@ -42,5 +42,3 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Dressed
 bot.gen.ts
 .dressed
-
-src/dressed
