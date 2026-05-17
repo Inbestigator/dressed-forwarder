@@ -25,7 +25,7 @@ export default function createForwarder(cc: string | URL, ...connectionParams: P
     connection[key as keyof HandlerActions]((data) =>
       fetch(cc, {
         method: "POST",
-        headers: { authorization: botEnv.DISCORD_TOKEN },
+        headers: { authorization: connectionParams[0]?.token ?? botEnv.DISCORD_TOKEN },
         body: JSON.stringify({
           type: ApplicationWebhookType.Event,
           event: { data, type: GatewayDispatchEvents[key.slice(2) as keyof typeof GatewayDispatchEvents] },
